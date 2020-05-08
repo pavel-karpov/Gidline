@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix"
+        android:src="@drawable/background" />
+
+    <RelativeLayout
+        android:id="@+id/relative_subscribes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:id="@+id/text_serv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/services"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            fontPath="font/Arial-Bold.ttf"
+            />
+        <LinearLayout
+            android:id="@+id/lin_layout"
+            android:layout_below="@id/text_serv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/image_btn_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_select"
+                    >
+                </ImageButton>
+
+                <ImageView
+                    android:id="@+id/image_left"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleX="1.2"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/create_resume_96"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Готовое\nрезюме"
+                    android:textStyle="bold"
+                    android:layout_below="@id/image_left"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/design_default_color_background"
+                    fontPath="font/Arial-Bold.ttf"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp">
+                <ImageButton
+                    android:id="@+id/image_btn_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image_center_selector">
+                </ImageButton>
+
+                <ImageView
+                    android:id="@+id/image_center"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/resume_check_96"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Проверка\nрезюме"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/image_center"
+                    android:textColor="@color/design_default_color_background"
+                    fontPath="font/Arial-Bold.ttf"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/image_btn_rigth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image_right_selector" />
+
+                <ImageView
+                    android:id="@+id/image_right"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleY="0.9"
+                    android:scaleX="1.1"
+                    android:background="@drawable/mailing_96"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Рассылка\nрезюме"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/design_default_color_background" fontPath="font/Arial-Bold.ttf"
+                    android:layout_below="@+id/image_right"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_purchases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_subscribes"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/my_purchases"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        fontPath="font/Arial-Bold.ttf" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_purchases"
+        android:layout_below="@id/text_purchases"
+
+        />
+
+</RelativeLayout>

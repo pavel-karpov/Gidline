@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Gidline</string>
+    <string name="google_maps_key">AIzaSyAyYDnYNfv30yEs5ve4Gcz0Op-3BdQ-Zaw</string>
+
+    <string name="menu_summary">Моё резюме</string>
+    <string name="menu_subscriptions">Мои подписки</string>
+    <string name="menu_documents">Мои документы</string>
+    <string name="menu_money">Деньги в долг</string>
+    <string name="menu_invite">Пригласить друга</string>
+    <string name="menu_questions">Вопросы о Gidline</string>
+    <string name="menu_exit">Выход</string>
+
+    <string name="not_found">К сожалению,\nна данный момент по вашему\nзапросу нет ни одной активной\nвакансии.\nПопробуйте поменять запрос.</string>
+
+    <string name="expansion_offer">Мы предлагаем:</string>
+    <string name="expansion_responsibility">В чем заключается работа:</string>
+    <string name="expansion_requirement">О вас:</string>
+
+    <string name="places_consulate">Посольство и консульства</string>
+    <string name="places_migration">Миграционные центры</string>
+    <string name="subscribes">Мои подписки</string>
+    <string name="services">Услуги:</string>
+    <string name="my_purchases">МОИ ПОКУПКИ:</string>
+    <string name="name_service">Наименование услуги:</string>
+    <string name="setup_newslatter">НАСТРОЙКА РАССЫЛКИ</string>
+    <string name="order_cost">Стоимость заказа</string>
+    <string name="action_to">Действует до</string>
+    <string name="number_order">Заказ № </string>
+    <string name="ordered_resume">Заказ готового резюме</string>
+    <string name="rate_service">ОЦЕНИТЕ ПРЕДОСТАВЛЕННУЮ УСЛУГУ</string>
+    <string name="ok">Хорошо</string>
+    <string name="bad">Плохо</string>
+    <string name="repeat">Повторить</string>
+    <string name="help_resume">Нужна помощь в резюме?</string>
+    <string name="what">ЧТО ВЫ ПОЛУЧИТЕ:</string>
+    <string name="order">ЗАКАЗАТЬ</string>
+    <string name="firstname">Укажите своё имя и фамилию</string>
+    <string name="citizen">Гражданство</string>
+    <string name="convient_way">Удобный способ для связи с Вами:</string>
+    <string name="telephone">Телефон</string>
+    <string name="telegram">Телеграм</string>
+    <string name="watsApp">WatsApp</string>
+    <string name="viber">Viber</string>
+    <string name="hurhsed">Хуршед Хасанов</string>
+    <string name="number">+7 (XXX) XXX-XX-XX</string>
+    <string name="number_phone_text">Номер телефона</string>
+    <string name="conventional_time">Укажите удобное время для связи с Вами</string>
+    <string name="date1">дата</string>
+    <string name="salary">Желаемая зарплата в месяц</string>
+    <string name="work_location">Местопложение работы</string>
+    <string name="region">Регион РФ</string>
+    <string name="city">Город</string>
+    <string name="period_work">Желаемый график работы</string>
+    <string name="position_work">Кем хотите работать</string>
+    <string name="how_position">Выберите из списка не более 5</string>
+    <string name="commit">Оплачивая услугу, вы подтверждаете, что ознакомились и согласны с <a href= "«Публичной офертой»">«Публичной офертой» и даёте согласие на обработку персональных данных.</a></string>
+    <string name="pay">Оплатить</string>
+    <string name="rubl">₽</string>
+
+    <plurals name="days">
+        <item quantity="zero">%1$d дней</item>
+        <item quantity="one">%1$d день</item>
+        <item quantity="two">%1$d дня</item>
+        <item quantity="few">%1$d дня</item>
+        <item quantity="many">%1$d дней</item>
+        <item quantity="other">%1$d дней</item>
+    </plurals>
+
+    <plurals name="notifications">
+        <item quantity="zero">%1$d уведомлений</item>
+        <item quantity="one">%1$d уведомление</item>
+        <item quantity="two">%1$d уведомления</item>
+        <item quantity="few">%1$d уведомления</item>
+        <item quantity="many">%1$d уведомлений</item>
+        <item quantity="other">%1$d уведомлений</item>
+    </plurals>
+
+    <string-array name="countries">
+        <item>Россия</item>
+        <item>Таджикистан</item>
+        <item>Узбекистан</item>
+        <item>Кыргызстан</item>
+        <item>Другое</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>Русский</item>
+    </string-array>
+</resources>
