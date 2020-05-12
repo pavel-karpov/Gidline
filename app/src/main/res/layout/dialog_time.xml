@@ -1,0 +1,337 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/comfort_time"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 9:00 до 10:00"
+                android:id="@+id/text_time_1"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 10:00 до 11:00"
+                android:id="@+id/text_time_2"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 11:00 до 12:00"
+                android:id="@+id/text_time_3"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_4">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 12:00 до 13:00"
+                android:id="@+id/text_time_4"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 13:00 до 14:00"
+                android:id="@+id/text_time_5"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_6">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 14:00 до 15:00"
+                android:id="@+id/text_time_6"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_7">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 15:00 до 16:00"
+                android:id="@+id/text_time_7"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_8">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 16:00 до 17:00"
+                android:id="@+id/text_time_8"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_9">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 17:00 до 18:00"
+                android:id="@+id/text_time_9"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 18:00 до 19:00"
+                android:id="@+id/text_time_10"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_11">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 19:00 до 20:00"
+                android:id="@+id/text_time_11"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linear_time_12">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/common_google_signin_btn_text_light_focused"
+                android:text="C 20:00 до 21:00"
+                android:id="@+id/text_time_12"
+                android:layout_weight="1" />
+            <ru.gidline.app.screen.search.filter.view.RadioButton
+                android:id="@+id/radio_time_12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.1"
+                android:tag="0"
+                app:buttonTint="@color/colorConsulate"
+                tools:checked="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

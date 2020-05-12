@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".screen.main.view.OrderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+        <RelativeLayout
+            android:id="@+id/order_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_relative"
+            android:layout_marginTop="16dp">
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColorHint="@color/common_google_signin_btn_text_light_focused"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/hurhsed"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="text"
+                android:background="@drawable/background_text">
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_text_name"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/firstname"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorConsulate"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"/>
+
+
+            <TextView
+                android:id="@+id/convient_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_name"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/convient_way" />
+
+            <CheckBox
+                android:id="@+id/check_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/convient_way"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:buttonTint="#993a99"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="@string/telephone"
+                android:textSize="8sp"
+                android:textColor="@color/colorPrimary" />
+            <CheckBox
+                android:id="@+id/check_telegram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check_telephone"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="#993a99"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="@string/telegram"
+                android:textSize="8sp"
+                android:textColor="@color/colorPrimary" />
+            <CheckBox
+                android:id="@+id/check_watsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/check_telephone"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="#993a99"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/convient_way"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="@string/watsApp"
+                android:textSize="8sp"
+                android:textColor="@color/colorPrimary" />
+
+            <CheckBox
+                android:id="@+id/check_viber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check_watsapp"
+                android:layout_alignBottom="@+id/check_telegram"
+                android:layout_toEndOf="@id/check_telegram"
+                android:buttonTint="#993a99"
+                android:layout_marginStart="36dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="@string/viber"
+                android:textColor="@color/colorPrimary"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+
+            <EditText
+                android:id="@+id/edit_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:textColor="@color/colorGrayText"
+                android:textSize="15sp"
+                android:paddingEnd="16dp"
+                android:textColorHint="@color/common_google_signin_btn_text_light_focused"
+                android:inputType="phone"
+                android:hint="@string/number"
+                android:layout_below="@id/check_viber"
+                android:background="@drawable/background_text" />
+            <TextView
+                android:id="@+id/text_view_number_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_text_phone"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/number_phone_text"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorConsulate"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_relative"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_salary"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/desired_income_96"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/salary"
+                android:layout_toEndOf="@+id/image_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/salary" />
+            <LinearLayout
+                android:id="@+id/linear_salary"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/image_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="ЗАРПЛАТА НЕ МЕНЕЕ"
+                    android:textColor="@color/colorMigration"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/text_salary"
+                    android:layout_width="0dp"
+                    android:text="@string/not_important"
+                    android:textColor="@color/colorMigration"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <SeekBar
+                android:id="@+id/seek_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_salary"
+                android:maxHeight="8dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:minHeight="8dp"
+                android:layout_marginStart="10dp"
+                android:progressDrawable="@drawable/seek_bar"
+                android:splitTrack="false"
+                android:thumb="@drawable/thumb"
+                android:layout_marginTop="16dp"
+                tools:ignore="UnusedAttribute" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/order_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_relative"
+            android:layout_marginTop="16dp">
+            <ImageView
+                android:id="@+id/image_geo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/location_96"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/text_geo"
+                android:layout_toEndOf="@+id/image_geo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/work_location" />
+            <Spinner
+                android:id="@+id/spinner_region"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:paddingEnd="16dp"
+                android:background="@drawable/button_inactive"
+                tools:entries="@array/region"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_below="@id/image_geo"
+                tools:text="Text Text Text Text Text Text Text Text Text Text Text Text Text " />
+
+            <Spinner
+                android:id="@+id/edit_text_city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="phone"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_below="@id/spinner_region"
+                android:background="@drawable/button_inactive" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/order_layout_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_relative"
+            android:layout_marginTop="16dp">
+            <ImageView
+                android:id="@+id/image_graphic"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/time_period_96"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/text_graphic"
+                android:layout_toEndOf="@+id/image_graphic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/period_work" />
+
+            <TextView
+                android:id="@+id/spinner_graphic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_graphic"
+                android:layout_marginStart="16dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/design_default_color_background"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/image_graphic"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/arrow_down" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/order_layout_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_relative"
+            android:layout_marginTop="16dp">
+            <ImageView
+                android:id="@+id/image_position"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/position_96"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/text_position"
+                android:layout_toEndOf="@+id/image_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/position_work" />
+            <TextView
+                android:id="@+id/text_position_choice"
+                android:layout_toEndOf="@+id/image_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorConsulate"
+                android:layout_below="@id/image_position"
+                android:text="@string/how_position" />
+
+            <TextView
+                android:id="@+id/list_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_position_choice"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                android:paddingBottom="10dp"
+                android:choiceMode="multipleChoice"
+                android:divider="@color/design_default_color_background"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/list_choice"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/order_layout_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linear_commit"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/check_comit"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#993a99"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:textColor="@color/colorPrimary"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:id="@+id/text_oferta"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorConsulate"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/commit"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_layout_8"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="5dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/image_button_commit"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="@drawable/image_left_selector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/text_commit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleX="0.5"
+                    android:scaleY="0.3"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableStart="@drawable/arrow_right"
+                    android:drawableTint="@color/colorGrayBackground"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_button_commit"
+                    app:layout_constraintEnd_toEndOf="@+id/image_button_commit"
+                    app:layout_constraintTop_toTopOf="@+id/image_button_commit" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/pay"
+                    android:textSize="18sp"
+                    android:textColor="@color/design_default_color_background"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_commit"
+                    app:layout_constraintEnd_toStartOf="@+id/text_commit"
+                    app:layout_constraintTop_toTopOf="@+id/image_button_commit" />
+
+                <TextView
+                    android:id="@+id/text_view_commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/design_default_color_background"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_button_commit"
+                    app:layout_constraintStart_toStartOf="@+id/image_button_commit"
+                    app:layout_constraintTop_toTopOf="@+id/image_button_commit" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
