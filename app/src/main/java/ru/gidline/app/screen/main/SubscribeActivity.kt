@@ -43,7 +43,7 @@ class SubscribeActivity : AppCompatActivity() {
         val items = listOf<Purchases>(Purchases(R.drawable.mailing_96,"НАСТРОИТЬ ОТПРАВКУ РЕЗЮМЕ","Действует до 14.04.2020",R.drawable.background_inwork,"259","оплачено"),
             Purchases(R.drawable.resume_check_96,"ОТПРАВИТЬ РЕЗЮМЕ НА ПРОВЕРКУ","В работе до 16.01.2020",R.drawable.background_inwork,"499","оплачено"),
             Purchases(R.drawable.create_resume_96,"ЗАКАЗАТЬ ГОТОВОЕ РЕЗЮМЕ","Исполнено  21.02.2020",R.drawable.chec_96,"1499","оплачено"),
-            Purchases(R.drawable.create_resume_96,"ЗАКАЗАТЬ ГОТОВОЕ РЕЗЮМЕ","В работе до 21.02.2020",R.drawable.background_inwork,"1499","оплачено")
+            Purchases(R.drawable.mailing_96,"НАСТРОИТЬ ОТПРАВКУ РЕЗЮМЕ","Исполнено 14.01.2020",R.drawable.chec_96,"259","оплачено")
         )
         mAdapter = RecyclerAdapter(items,this)
         mRecyclerPurchases.adapter=mAdapter
@@ -83,7 +83,7 @@ private class RecyclerAdapter(var items: List<Purchases>,var context:Context): R
     override fun onBindViewHolder(holder: RecyclerHolder, position: Int) {
         holder.bind(items[position])
        holder.constraint_item.setOnClickListener {
-           var intent = Intent(context,DetailPurchaseActivity::class.java)
+           val intent = Intent(context,DetailPurchaseActivity::class.java)
            intent.putExtra("textData",items[position].textData)
            intent.putExtra("textPrice",items[position].textPrice)
            intent.putExtra("textAction",items[position].textAction)
@@ -111,6 +111,7 @@ private class RecyclerAdapter(var items: List<Purchases>,var context:Context): R
             }
             textPrice.text = item.textPrice
             textPurchase.text = item.textPurchase
+            textPrice.append(" "+context.getString(R.string.rubl))
        }
 
     }

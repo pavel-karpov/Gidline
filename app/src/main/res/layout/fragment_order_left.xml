@@ -71,7 +71,7 @@
                 android:layout_above="@id/text_view_citizen"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="20dp"
-                android:src="@drawable/arrow_down" />
+                android:src="@drawable/triangle36" />
 
             <TextView
                 android:id="@+id/text_view_citizen"

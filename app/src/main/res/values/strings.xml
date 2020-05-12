@@ -12,10 +12,17 @@
 
     <string name="not_found">К сожалению,\nна данный момент по вашему\nзапросу нет ни одной активной\nвакансии.\nПопробуйте поменять запрос.</string>
 
+    <string name="days">14 дней сервис работает на Вас</string>
+    <string name="first_always1">Вы всегда будете первым</string>
+    <string name="economy">Экономия времени на поиск</string>
     <string name="expansion_offer">Мы предлагаем:</string>
     <string name="expansion_responsibility">В чем заключается работа:</string>
     <string name="expansion_requirement">О вас:</string>
-
+    <string name="resume">Готовое резюме за 48 часов</string>
+    <string name="resume_helpws">Помощь в составлении резюме</string>
+    <string name="resume_help">Помощь в составлении резюме.</string>
+    <string name="resume_right">Грамотное резюме за 24 часа</string>
+    <string name="language">Резюме на русском языке</string>
     <string name="places_consulate">Посольство и консульства</string>
     <string name="places_migration">Миграционные центры</string>
     <string name="subscribes">Мои подписки</string>
@@ -25,7 +32,17 @@
     <string name="setup_newslatter">НАСТРОЙКА РАССЫЛКИ</string>
     <string name="order_cost">Стоимость заказа</string>
     <string name="action_to">Действует до</string>
-    <string name="number_order">Заказ № </string>
+    <string name="not_important">НЕ ВАЖНО</string>
+    <string name="number_order_1">Заказ № N2004010001</string>
+    <string name="number_order_2">Заказ № P2001140001</string>
+    <string name="number_order_3">Заказ № P2002210001</string>
+    <string name="date_april_1">01.04.2020</string>
+    <string name="date_april_14">14.04.2020</string>
+    <string name="fabruary_19">19.02.2020</string>
+    <string name="december_31">31.12.2019</string>
+    <string name="message">НАСТРОЙКА РАССЫЛКИ</string>
+    <string name="check_resume">ПРОВЕРКА РЕЗЮМЕ</string>
+    <string name="order_resume">ЗАКАЗ ГОТОВОГО РЕЗЮМЕ</string>
     <string name="ordered_resume">Заказ готового резюме</string>
     <string name="rate_service">ОЦЕНИТЕ ПРЕДОСТАВЛЕННУЮ УСЛУГУ</string>
     <string name="ok">Хорошо</string>
@@ -39,7 +56,7 @@
     <string name="convient_way">Удобный способ для связи с Вами:</string>
     <string name="telephone">Телефон</string>
     <string name="telegram">Телеграм</string>
-    <string name="watsApp">WatsApp</string>
+    <string name="watsApp">WhatsApp</string>
     <string name="viber">Viber</string>
     <string name="hurhsed">Хуршед Хасанов</string>
     <string name="number">+7 (XXX) XXX-XX-XX</string>
@@ -56,6 +73,14 @@
     <string name="commit">Оплачивая услугу, вы подтверждаете, что ознакомились и согласны с <a href= "«Публичной офертой»">«Публичной офертой» и даёте согласие на обработку персональных данных.</a></string>
     <string name="pay">Оплатить</string>
     <string name="rubl">₽</string>
+    <string name="comfort_date">Выберите удобную дату</string>
+    <string name="comfort_time">Выберите удобное время</string>
+    <string name="list_5">ВЫБЕРИТЕ ИЗ СПИСКА НЕ БОЛЕЕ 5</string>
+    <string name="other">ДРУГОЕ</string>
+    <string name="use">ПРИМЕНИТЬ</string>
+    <string name="ready_resume">Готовое\nрезюме</string>
+    <string name="check_resume_1">Проверка\nрезюме</string>
+    <string name="test">Проведём удаленное интервью на родном языке и подготовим вам готовое решение</string>
 
     <plurals name="days">
         <item quantity="zero">%1$d дней</item>
@@ -74,6 +99,9 @@
         <item quantity="many">%1$d уведомлений</item>
         <item quantity="other">%1$d уведомлений</item>
     </plurals>
+    <string-array name="region">
+        <item>Регион РФ</item>
+    </string-array>
 
     <string-array name="countries">
         <item>Россия</item>

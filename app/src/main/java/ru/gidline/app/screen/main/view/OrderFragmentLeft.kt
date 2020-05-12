@@ -39,7 +39,7 @@ class OrderFragmentLeft : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view: View? = null
+        var view: View
         val cost: String
         val context: Context? = getContext()
         view = inflater.inflate(R.layout.fragment_order_left, container, false)
@@ -65,7 +65,7 @@ class OrderFragmentLeft : Fragment() {
         textToolbar.setText("ФОРМА ЗАКАЗА")
         var arraySpinner = listOf("", "Россия", "Таджикистан", "Узбекистан", "Кургызстан", "Другое")
         var adapter: ArrayAdapter<String>? =
-            context?.let { ArrayAdapter(it, R.layout.spinner_item, arraySpinner) }
+            context?.let { ArrayAdapter(it, R.layout.spinner_item2, arraySpinner) }
         spinner.adapter = adapter
         cost = arguments?.get("cost").toString()
         val phoneFormat = "+7([000]) [000]-[00]-[00]"

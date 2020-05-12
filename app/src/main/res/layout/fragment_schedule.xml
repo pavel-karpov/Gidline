@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/linear_work">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="ПОСТОЯННАЯ РАБОТА, ПОЛНЫЙ РАБОЧИЙ ДЕНЬ"
+            android:id="@+id/text_work"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_work_1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="ПОСТОЯННАЯ РАБОТА СО СМЕННЫМ ГРАФИКОМ"
+            android:id="@+id/text_work_1"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_work_2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="ВАХТОВЫЙ МЕТОД НЕ БОЛЕЕ 90 ДНЕЙ РАБОТ С ПРОЖИВАНИЕМ НА ТЕРРИТОРИИ РАБОТОДАТЕЛЯ"
+            android:id="@+id/text_work_2"
+            android:layout_weight="1" />
+
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+
+        android:id="@+id/linear_work_3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="ПОДРАБОТКА В СВОБОДНОЕ ВРЕМЯ"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/text_work_3"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+
+
+</LinearLayout>

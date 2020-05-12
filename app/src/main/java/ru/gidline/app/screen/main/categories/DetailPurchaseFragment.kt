@@ -36,6 +36,8 @@ class DetailPurchaseFragment : Fragment() {
         val textPrice:TextView = view.findViewById(R.id.order_cost_name)
         val textNds:TextView = view.findViewById(R.id.nds_order_name)
         val btnTextService:TextView = view.findViewById(R.id.btn_newslatter)
+        val number:TextView = view.findViewById(R.id.text_number_zakaz)
+        val dataCost:TextView = view.findViewById(R.id.data_cost_name)
         workUntil.setText(arguments?.get("textData").toString().dropLast(10))
         textData.setText(arguments?.get("textData").toString().drop(12))
         textPrice.setText(arguments?.get("textPrice").toString())
@@ -43,7 +45,24 @@ class DetailPurchaseFragment : Fragment() {
         textNds.setText(arguments?.get("nds").toString().dropLast(13))
         textNds.append(" "+getString(R.string.rubl))
         btnTextService.setText(arguments?.get("textAction").toString())
+        if (arguments?.get("textAction").toString().equals("НАСТРОИТЬ ОТПРАВКУ РЕЗЮМЕ")){
+            number.setText(getString(R.string.number_order_1))
+            btnTextService.setText(getString(R.string.message))
+            if (arguments?.get("textData").toString().get(0).equals('Д')){
+                dataCost.setText(getString(R.string.date_april_1))}
+        }
+        else if (arguments?.get("textAction").toString().equals("ОТПРАВИТЬ РЕЗЮМЕ НА ПРОВЕРКУ")){
+            number.setText(getString(R.string.number_order_2))
+            btnTextService.setText(getString(R.string.check_resume))
+            if (arguments?.get("textData").toString().get(0).equals('В')){
+                dataCost.setText(getString(R.string.date_april_14))}
+            textData.append("\nвключительно")
 
+        }
+        else if (arguments?.get("textAction").toString().equals("ЗАКАЗАТЬ ГОТОВОЕ РЕЗЮМЕ")){
+        number.setText(getString(R.string.number_order_3))
+        btnTextService.setText(getString(R.string.order_resume))
+        }
         return view
     }
 

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGrayBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/list_5"
+        android:textStyle="bold"
+        android:textColor="@color/colorMigration" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_prof">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="РАЗНОРАБОЧИЙ"
+            android:id="@+id/text_prof"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_prof"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="АДМИНИСТРАТОР"
+            android:id="@+id/text_prof_1"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_prof_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="ПРОДАВЕЦ"
+            android:id="@+id/text_prof_2"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="КОМПЛЕКТОВЩИК"
+            android:id="@+id/text_prof_4"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_5">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="ОПЕРАТОР"
+            android:id="@+id/text_prof_5"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_6">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="МЕНЕДЖЕР ПО ПРОДАЖАМ"
+            android:id="@+id/text_prof_6"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_7">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="ВОДИТЕЛЬ"
+            android:id="@+id/text_prof_7"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_8">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="УБОРЩИК/УБОРЩИЦА"
+            android:id="@+id/text_prof_8"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_9">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="ФАСОВЩИК"
+            android:id="@+id/text_prof_9"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="ПРОДАВЕЦ-КАССИР"
+            android:id="@+id/text_prof_10"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/linear_prof_11">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:text="ГОРНИЧНАЯ"
+            android:id="@+id/text_prof_11"
+            android:layout_weight="1" />
+        <ru.gidline.app.screen.search.filter.view.RadioButton
+            android:id="@+id/item_radio_time_prof_11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.1"
+            android:tag="0"
+            app:buttonTint="@color/colorConsulate"
+            tools:checked="true" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_proof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:maxLength="60"
+        android:inputType="text"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="36dp"
+        android:hint="@string/other"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:paddingStart="16dp"
+        android:background="@drawable/background_text" />
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/image_right_selector"
+            android:id="@+id/btn_proof" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/use"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorGrayBackground"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

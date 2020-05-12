@@ -71,6 +71,12 @@ class ExpansionLayout : LinearLayout, KodeinAware {
             else -> ""
         }
     }
+    fun updateText(text:String)=context.run {
+        tv_text.text = when (tv_name.text){
+            getString(R.string.subscribes)->text
+            else -> ""
+        }
+    }
 
     override fun hasOverlappingRendering() = false
 }

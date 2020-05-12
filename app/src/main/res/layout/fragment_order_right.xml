@@ -344,7 +344,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="16dp"
-                android:src="@drawable/arrow_down" />
+                android:src="@drawable/triangle36" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/order_layout_6"
